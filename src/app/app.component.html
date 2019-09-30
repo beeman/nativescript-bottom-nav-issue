@@ -1,0 +1,28 @@
+<BottomNavigation selectedIndex="1">
+    <TabStrip>
+        <TabStripItem>
+            <Label text="Home"></Label>
+            <Image src="font://&#xf015;" class="fa t-36"></Image>
+        </TabStripItem>
+        <TabStripItem>
+            <Label text="Contacts"></Label>
+            <Image src="font://&#xf1ea;" class="fa t-36"></Image>
+        </TabStripItem>
+        <TabStripItem>
+            <Label text="Search"></Label>
+            <Image src="font://&#xf002;" class="fa t-36"></Image>
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem>
+        <page-router-outlet name="homeTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="browseTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="searchTab"></page-router-outlet>
+    </TabContentItem>
+</BottomNavigation>
